@@ -20,7 +20,7 @@
     QuadCurveMenuItem *_addButton;
     
     id<QuadCurveMenuDelegate> _delegate;
-
+    
 }
 @property (nonatomic, copy) NSArray *menusArray;
 @property (nonatomic, getter = isExpanding) BOOL expanding;
@@ -40,6 +40,8 @@
 @property (nonatomic, assign) CGFloat menuWholeAngle;
 
 - (id)initWithFrame:(CGRect)frame menus:(NSArray *)aMenusArray;
+- (id)initWithFrame:(CGRect)frame menus:(NSArray *)aMenusArray location:(CGPoint)initPoint;
+
 @end
 
 @protocol QuadCurveMenuDelegate <NSObject>

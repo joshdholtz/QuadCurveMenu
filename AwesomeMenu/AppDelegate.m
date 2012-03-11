@@ -80,6 +80,12 @@
     
     QuadCurveMenu *menu = [[QuadCurveMenu alloc] initWithFrame:self.window.bounds menus:menus];
 	
+    // customize menu location
+    /*
+    QuadCurveMenu *menu = [[QuadCurveMenu alloc] initWithFrame:self.window.bounds menus:menus location: CGPointMake(30, 450)];
+    menu.menuWholeAngle = M_PI/2;
+    */
+    
 	// customize menu
 	/*
 	menu.rotateAngle = M_PI/3;
